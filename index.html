@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Exercise 2</title>
+</head>
+<body>
+	<h1> Area and Circumference of a Circle</h1>
+
+	<img src="https://dictionary.cambridge.org/images/thumb/circle_noun_001_02738.jpg?version=6.0.43">
+	<h4>Radius: 7 in</h4>
+
+	<h3 id="Minji"> click the buttons to find out the circumference and area of the circle</h3>
+ <!--Area=pi*(rad**2)-->
+
+	<button type="button" class="btn btn-warning" onclick="
+	const pi= 3.14;
+	var rad= 7;
+	var	area = pi*(rad**2);
+
+	document.getElementById('Minji').innerHTML='The area of circle is '+ pi*(rad**2) + '.'
+	">AREA</button>
+
+	<button type="button" onclick="
+	const pi=3.14;
+	var rad=7;
+	var circumference = 2*pi*rad 
+
+	document.getElementById('Minji').innerHTML='The circumference of circle is '+ 2*pi*rad  + '.'
+	">CIRCUMFERENCE</button>
+
+
+	<button type="button"onClick="window.location.reload()">CLEAR</button>
+</body>
+</html>
